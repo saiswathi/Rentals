@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="105dp"
+        android:paddingRight="105dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/rent"
+            android:id="@+id/button1"
+            android:onClick="goRent"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="#ffffff"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/sale"
+            android:id="@+id/button2"
+            android:onClick="goSale"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="#7f7f7f"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+</LinearLayout>

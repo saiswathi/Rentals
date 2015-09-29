@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable xmlns:android="http://schemas.android.com/apk/res/android"
+    android:label="@string/app_name"
+    android:searchSuggestAuthority="com.saiswathipujari.rentals.MyCustomSuggestionProvider"
+    android:searchMode="showSearchLabelAsBadge"
+    android:searchSuggestSelection=" ?"
+    android:queryAfterZeroResults="true"
+    android:searchSuggestThreshold="1"
+    android:hint="@string/locationhint"
+    android:layout_width="match_parent"
+
+    android:searchSuggestIntentAction="android.intent.action.VIEW">
+
+</searchable>

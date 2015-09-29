@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/layout2"
+    android:layout_alignParentBottom="true"
+    android:background="#ffffff"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:descendantFocusability="blocksDescendants"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="115dp"
+        android:text="@string/nophotos"
+        android:layout_weight="0.07" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="113dp"
+        android:orientation="vertical"
+        android:paddingLeft="5dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/aptPriceBeds"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#010101" />
+
+            <Button
+                android:id="@+id/btnFav"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:drawableLeft="@mipmap/rsz_btn_star_big_on_pressed"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/saved"
+                android:textSize="12sp"
+                android:onClick="changeFav"
+                android:textColor="#010101"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/apt_desc"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="10sp"
+            android:textColor="#010101" />
+
+
+        <TextView
+            android:id="@+id/tv_snippet"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:textSize="12sp"
+            android:textColor="#010101" />
+
+        <TextView
+            android:id="@+id/listing_id"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</LinearLayout>

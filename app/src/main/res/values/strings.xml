@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Rentals</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="zoopla"><![CDATA[<a href="http://www.zoopla.co.uk/">
+    <img src="http://www.zoopla.co.uk/static/images/mashery/powered-by-zoopla-150x73.png"
+     width="70" height="30" title="Property information powered by Zoopla"
+     alt="Property information powered by Zoopla" border="0"></a>]]></string>
+    <string name="action_search">search</string>
+    <string name="title_activity_searchable">SearchableActivity</string>
+    <string name="done">done</string>
+    <string name="locationhint">Enter location</string>
+    <string name="sale">FOR SALE</string>
+    <string name="rent">FOR RENT</string>
+    <string name="saved">Saved</string>
+    <string name="save">Save</string>
+    <string name="saveapt">Save Apartment</string>
+    <string name="aptinfobtn">View Apartment Information</string>
+    <string name="nophotos">This Listing Has No Photos</string>
+    <string name="favourite">Saved Apartments</string>
+</resources>

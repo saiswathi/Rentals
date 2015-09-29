@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="555dp"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/map"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:focusableInTouchMode="true"/>
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/webView"
+        android:layout_below="@+id/map"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="100dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layout2"
+        android:onClick="goToAptInfo"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:weightSum="1">
+
+        <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="115dp"
+        android:text="@string/nophotos"
+            android:layout_weight="0.07" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="113dp"
+        android:orientation="vertical"
+        android:paddingLeft="5dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/aptPriceBeds"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#010101" />
+
+            <Button
+                android:id="@+id/btnFav"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:drawableLeft="@mipmap/rsz_btn_star_big_off"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/save"
+                android:textSize="12sp"
+                android:onClick="changeFav"
+                android:textColor="#010101"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/apt_desc"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="10sp"
+            android:textColor="#010101" />
+
+
+        <TextView
+            android:id="@+id/tv_snippet"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:textSize="12sp"
+            android:textColor="#010101" />
+
+        <TextView
+            android:id="@+id/listing_id"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+</RelativeLayout>
